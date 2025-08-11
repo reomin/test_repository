@@ -19,11 +19,11 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "モダンなReact + TypeScriptで構築されたECサイト。Stripe決済、リアルタイム在庫管理、管理者ダッシュボードを実装。",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      tech: ["React", "TypeScript", "Node.js", "MongoDB"],
-      github: "#",
+      title: "Cafeteria Project",
+      description: "学生向け、学食共有webアプリ。ユーザーが学食のメニューや価格を共有し、評価を投稿できる。技育キャンプで開発。",
+      image: "../image.png",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Nest.js"],
+      github: "https://github.com/reomin/cafeteria_project",
       demo: "#"
     },
     {
@@ -36,18 +36,18 @@ const Portfolio = () => {
     },
     {
       title: "モバイルアプリ",
-      description: "React Nativeで開発されたソーシャルメディアアプリ。リアルタイムチャット、写真共有、位置情報機能を搭載。",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop",
-      tech: ["React Native", "Firebase", "Redux", "Expo"],
+      description: "Nfcを利用した、対応するキーホルダー専用アプリ、Javaで開発を行った。",
+      image: "../ic_launcher-playstore.png",
+      tech: ["Java", "xml"],
       github: "#",
-      demo: "#"
+      demo: "https://play.google.com/store/apps/details?id=com.release.the_music&hl=en"
     }
   ];
 
   const skills = [
-    { name: "Frontend", items: ["React", "Vue.js", "TypeScript", "Next.js", "Tailwind CSS"], icon: Code },
-    { name: "Backend", items: ["Node.js", "Python", "FastAPI", "PostgreSQL", "MongoDB"], icon: Zap },
-    { name: "Design", items: ["Figma", "Adobe XD", "Photoshop", "UI/UX Design", "Responsive Design"], icon: Palette }
+    { name: "Frontend", items: ["React","Next.js", "Tailwind CSS"], icon: Code },
+    { name: "Backend", items: ["PHP", "Laravel", "Go"], icon: Zap },
+    { name: "QA", items: ["Selenium", "PHPUnit", "Performance Testing"], icon: Zap },
   ];
 
   return (
@@ -107,25 +107,25 @@ const Portfolio = () => {
         <div className="text-center z-10 px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full flex items-center justify-center text-4xl font-bold shadow-2xl shadow-cyan-400/25">
-              YN
+              <img src="../get.jpg" alt="Profile" className="rounded-full" />
             </div>
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
             <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Your Name
+              reomin
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            フルスタックエンジニア・UI/UXデザイナー
+            開発・QAエンジニア
           </p>
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-            モダンな技術スタックを使用して、美しく機能的なWebアプリケーションを設計・開発しています。
+            QAエンジニアとして仕事をしつつ、Webアプリケーションを開発しています。
           </p>
           <button
             onClick={() => scrollToSection('projects')}
             className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-medium hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-cyan-500/25 hover:scale-105"
           >
-            作品を見る
+            ↓ 開発ポートフォリオ
           </button>
         </div>
         
@@ -144,12 +144,12 @@ const Portfolio = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-gray-300 text-lg leading-relaxed">
-                5年以上のWeb開発経験を持つフルスタックエンジニアです。React、Vue.js、Node.jsを中心としたモダンな技術スタックで、
-                スケーラブルで保守性の高いアプリケーションを開発しています。
+                開発・QAエンジニアとして仕事をしつつ、Webアプリケーションを開発しています。
+                モダンな技術スタックを使用して、学習目的でWebアプリケーションを設計・開発しています。
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
-                ユーザー体験を重視し、美しいデザインと高いパフォーマンスを両立させることを得意としています。
-                常に新しい技術にチャレンジし、最適なソリューションを提供することを心がけています。
+                メインはPHPを使用したWebアプリケーションの開発を行っています。
+                テスト駆動開発（TDD）を実践し、品質の高いコードを書くことを心がけています。
               </p>
             </div>
             
@@ -236,21 +236,14 @@ const Portfolio = () => {
           
           <div className="flex justify-center space-x-8 mb-12">
             <a
-              href="mailto:your.email@example.com"
-              className="flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm px-6 py-4 rounded-xl hover:bg-slate-800/70 transition-all duration-300 hover:scale-105"
-            >
-              <Mail className="text-cyan-400" size={24} />
-              <span>Email</span>
-            </a>
-            <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/reo-takeuchi-b2a93a1a8/"
               className="flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm px-6 py-4 rounded-xl hover:bg-slate-800/70 transition-all duration-300 hover:scale-105"
             >
               <Linkedin className="text-cyan-400" size={24} />
               <span>LinkedIn</span>
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/reomin"
               className="flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm px-6 py-4 rounded-xl hover:bg-slate-800/70 transition-all duration-300 hover:scale-105"
             >
               <Github className="text-cyan-400" size={24} />
@@ -259,7 +252,7 @@ const Portfolio = () => {
           </div>
           
           <p className="text-gray-400">
-            © 2025 Your Name. All rights reserved.
+            © 2025 reomin. All rights reserved.
           </p>
         </div>
       </section>
