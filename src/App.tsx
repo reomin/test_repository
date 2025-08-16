@@ -21,23 +21,23 @@ const Portfolio = () => {
     {
       title: "Cafeteria Project",
       description: "学生向け、学食共有webアプリ。ユーザーが学食のメニューや価格を共有し、評価を投稿できる。技育キャンプで開発。",
-      image: "../image.png",
+      image: "./src/assets/images/image.png",
       tech: ["Next.js", "TypeScript", "Tailwind CSS", "Nest.js"],
       github: "https://github.com/reomin/cafeteria_project",
       demo: "#"
     },
+    // {
+    //   title: "AIダッシュボード",
+    //   description: "機械学習モデルの結果を可視化するダッシュボード。リアルタイムデータ更新とインタラクティブなチャート。",
+    //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+    //   tech: ["Vue.js", "Python", "FastAPI", "Chart.js"],
+    //   github: "#",
+    //   demo: "#"
+    // },
     {
-      title: "AIダッシュボード",
-      description: "機械学習モデルの結果を可視化するダッシュボード。リアルタイムデータ更新とインタラクティブなチャート。",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      tech: ["Vue.js", "Python", "FastAPI", "Chart.js"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "モバイルアプリ",
+      title: "The Music",
       description: "Nfcを利用した、対応するキーホルダー専用アプリ、Javaで開発を行った。",
-      image: "../ic_launcher-playstore.png",
+      image: "./src/assets/images/ic_launcher-playstore.png",
       tech: ["Java", "xml"],
       github: "#",
       demo: "https://play.google.com/store/apps/details?id=com.release.the_music&hl=en"
@@ -107,7 +107,7 @@ const Portfolio = () => {
         <div className="text-center z-10 px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full flex items-center justify-center text-4xl font-bold shadow-2xl shadow-cyan-400/25">
-              <img src="../get.jpg" alt="Profile" className="rounded-full" />
+              <img src="./src/assets/images/get.jpg" alt="Profile" className="rounded-full" />
             </div>
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
