@@ -1,4 +1,4 @@
-import { ChevronDown, Github, ExternalLink, Linkedin, Menu, X, Code, Zap } from 'lucide-react';
+import { ChevronDown, Github, ExternalLink, Linkedin, Code, Zap } from 'lucide-react';
 import Icon from './assets/images/icon.jpg';
 import Cafe_image from './assets/images/cafe_image.png';
 import Music_image from './assets/images/music_image.png';
@@ -53,12 +53,12 @@ const Portfolio = () => {
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
             QAエンジニアとして仕事をしつつ、Webアプリケーションを開発しています。
           </p>
-          <button
-            onClick={() => scrollToSection('projects')}
+          <a
+            href='#projects'
             className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-medium hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-cyan-500/25 hover:scale-105"
           >
             ↓ 開発ポートフォリオ
-          </button>
+          </a>
         </div>
         
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
